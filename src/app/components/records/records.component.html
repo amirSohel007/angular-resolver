@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="rwd-table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>EyeColor</th>
+            <th>FavoriteFruit</th>
+            <th>longitude</th>
+            <th>Picture</th>
+        </tr>
+        <tr *ngFor="let user of userdata">
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.eyeColor}}</td>
+            <td>{{user.favoriteFruit}}</td>
+            <td>{{user.longitude}}</td>
+            <td><img [src]=user.picture></td>
+        </tr>
+
+    </table>
+</div>
